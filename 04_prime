@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter Number : " <<endl;
+    cin>>n;
+    int ch=1;
+    if(n>1){
+    for(int i=2 ; i<n/2 ;i++){
+        if(n%i==0){
+            cout<<"Not A prime number"<<endl;
+            ch=0;
+            break;
+        }
+
+    }
+    }
+
+    if(ch==1){
+        cout<<"Prime number"<<endl;
+    }
+    return 0;
+}
